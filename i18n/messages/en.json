@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "features": "Features",
+    "howItWorks": "How it Works",
+    "download": "Download"
+  },
+  "hero": {
+    "badge": "Chrome Extension",
+    "title": "Visual Feedback &",
+    "titleHighlight": "AI-Powered",
+    "titleEnd": "UI Edits",
+    "description": "Review, edit, and export design changes directly from your browser. Turn visual feedback into actionable developer prompts in seconds.",
+    "cta": "Add to Chrome - It's Free",
+    "ctaSecondary": "Watch Demo"
+  },
+  "features": {
+    "title": "Everything You Need for",
+    "titleHighlight": "Perfect UI Feedback",
+    "feature1": {
+      "title": "Visual Feedback &",
+      "titleHighlight": "AI-Powered UI Edits",
+      "description": "Review, edit, and export design changes directly from your browser. Turn visual feedback into actionable developer prompts in seconds."
+    },
+    "feature2": {
+      "title": "Generate",
+      "titleHighlight": "Prompts",
+      "titleEnd": "for AI Code Editors",
+      "description": "Stop struggling to explain UI issues to AI. Get structured prompts and clean CSS designed specifically for fast, accurate AI code generation."
+    },
+    "feature3": {
+      "title": "Point, Click and Edit",
+      "titleHighlight": "Instantly",
+      "description": "Modify any element on the page without touching a line of code. Adjust colors, spacing, font sizes and more in real time."
+    },
+    "feature4": {
+      "title": "Shareable,",
+      "titleHighlight": "Organized UI Reports",
+      "description": "Aggregate individual edits into one clear document. Get categorized changes and a consolidated master AI prompt for the whole page."
+    }
+  },
+  "howItWorks": {
+    "title": "How It",
+    "titleHighlight": "Works",
+    "step1": {
+      "title": "Install Extension",
+      "description": "Add Revisely to Chrome in one click. No signup required."
+    },
+    "step2": {
+      "title": "Start Inspection",
+      "description": "Click on any element to open the revision panel and make your edits."
+    },
+    "step3": {
+      "title": "Export & Share",
+      "description": "Generate AI prompts or revision cards and share with your team."
+    }
+  },
+  "benefits": {
+    "title": "Why Choose",
+    "titleHighlight": "Revisely",
+    "benefit1": {
+      "title": "100% Free",
+      "description": "No hidden costs, no premium tiers. All features available for everyone."
+    },
+    "benefit2": {
+      "title": "Privacy First",
+      "description": "Your data stays on your device. No tracking, no analytics, no data collection."
+    },
+    "benefit3": {
+      "title": "Works Everywhere",
+      "description": "Compatible with any website. No restrictions, no limitations."
+    },
+    "benefit4": {
+      "title": "AI Ready",
+      "description": "Export prompts optimized for ChatGPT, Claude, Cursor, and other AI tools."
+    }
+  },
+  "cta": {
+    "title": "Ready to Streamline Your",
+    "titleHighlight": "UI Feedback?",
+    "description": "Join thousands of designers and developers who use Revisely to collect visual feedback and generate AI-ready prompts.",
+    "button": "Install Now - Free"
+  },
+  "footer": {
+    "description": "Visual Feedback & AI Prompts for modern web development.",
+    "rights": "All rights reserved.",
+    "madeWith": "by",
+    "by": "Made with"
+  }
+}
