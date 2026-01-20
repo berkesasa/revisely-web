@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { Chrome, Play } from 'lucide-react';
+import { Chrome } from 'lucide-react';
 
 interface HeroProps {
     translations: {
@@ -12,7 +12,6 @@ interface HeroProps {
         titleEnd: string;
         description: string;
         cta: string;
-        ctaSecondary: string;
     };
 }
 
@@ -57,22 +56,15 @@ export default function Hero({ translations }: HeroProps) {
                             {translations.description}
                         </p>
 
-                        {/* CTA Buttons */}
-                        <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 animate-fade-in-up delay-300">
+                        {/* CTA Button */}
+                        <div className="animate-fade-in-up delay-300">
                             <Link
-                                href="https://chromewebstore.google.com/detail/revisely-visual-feedback/cnfnhdpdfljogkhfmagobeieoagakfnn"
+                                href="https://chromewebstore.google.com/detail/revisely-visual-feedback/jcomekjleekgpnbpbihopehidpjnfkcl"
                                 target="_blank"
-                                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-[#ff4757] hover:bg-[#ff6b7a] text-white font-semibold text-lg transition-all duration-300 hover:shadow-xl hover:shadow-[#ff4757]/30 animate-pulse-glow"
+                                className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-[#ff4757] hover:bg-[#ff6b7a] text-white font-semibold text-lg transition-all duration-300 hover:shadow-xl hover:shadow-[#ff4757]/30 animate-pulse-glow"
                             >
                                 <Chrome size={20} />
                                 {translations.cta}
-                            </Link>
-                            <Link
-                                href="#features"
-                                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-[#252525] border border-[#333] hover:border-[#ff4757] text-white font-semibold text-lg transition-all duration-300"
-                            >
-                                <Play size={20} className="text-[#ff4757]" />
-                                {translations.ctaSecondary}
                             </Link>
                         </div>
                     </div>

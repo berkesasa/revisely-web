@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { Heart, Github, Twitter } from 'lucide-react';
+import { Heart, Github, Linkedin, Mail } from 'lucide-react';
 
 interface FooterProps {
     translations: {
@@ -41,18 +41,27 @@ export default function Footer({ translations }: FooterProps) {
                     {/* Center - Social Links */}
                     <div className="flex items-center gap-4">
                         <Link
-                            href="https://github.com"
+                            href="https://github.com/berkesasa"
                             target="_blank"
                             className="w-10 h-10 rounded-lg bg-[#252525] border border-[#333] flex items-center justify-center hover:border-[#ff4757] hover:text-[#ff4757] transition-all duration-300 text-[#666]"
+                            aria-label="GitHub"
                         >
                             <Github size={18} />
                         </Link>
                         <Link
-                            href="https://twitter.com"
+                            href="https://linkedin.com/in/berkesasa"
                             target="_blank"
                             className="w-10 h-10 rounded-lg bg-[#252525] border border-[#333] flex items-center justify-center hover:border-[#ff4757] hover:text-[#ff4757] transition-all duration-300 text-[#666]"
+                            aria-label="LinkedIn"
                         >
-                            <Twitter size={18} />
+                            <Linkedin size={18} />
+                        </Link>
+                        <Link
+                            href="mailto:berkesasa.dev@gmail.com"
+                            className="w-10 h-10 rounded-lg bg-[#252525] border border-[#333] flex items-center justify-center hover:border-[#ff4757] hover:text-[#ff4757] transition-all duration-300 text-[#666]"
+                            aria-label="Email"
+                        >
+                            <Mail size={18} />
                         </Link>
                     </div>
 

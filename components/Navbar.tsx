@@ -11,7 +11,6 @@ interface NavbarProps {
     translations: {
         features: string;
         howItWorks: string;
-        download: string;
     };
 }
 
@@ -35,8 +34,8 @@ export default function Navbar({ locale, translations }: NavbarProps) {
     return (
         <nav
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-                    ? 'glass py-3'
-                    : 'bg-transparent py-5'
+                ? 'glass py-3'
+                : 'bg-transparent py-5'
                 }`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -69,16 +68,9 @@ export default function Navbar({ locale, translations }: NavbarProps) {
                         ))}
                     </div>
 
-                    {/* Right Side */}
-                    <div className="hidden md:flex items-center gap-4">
+                    {/* Right Side - Language Switcher Only */}
+                    <div className="hidden md:flex items-center">
                         <LanguageSwitcher currentLocale={locale} />
-                        <Link
-                            href="https://chromewebstore.google.com/detail/revisely-visual-feedback/cnfnhdpdfljogkhfmagobeieoagakfnn"
-                            target="_blank"
-                            className="px-5 py-2.5 rounded-lg bg-[#ff4757] hover:bg-[#ff6b7a] text-white font-semibold text-sm transition-all duration-300 hover:shadow-lg hover:shadow-[#ff4757]/25"
-                        >
-                            {translations.download}
-                        </Link>
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -104,15 +96,8 @@ export default function Navbar({ locale, translations }: NavbarProps) {
                                     {link.label}
                                 </Link>
                             ))}
-                            <div className="flex items-center gap-4 mt-2">
+                            <div className="mt-2">
                                 <LanguageSwitcher currentLocale={locale} />
-                                <Link
-                                    href="https://chromewebstore.google.com/detail/revisely-visual-feedback/cnfnhdpdfljogkhfmagobeieoagakfnn"
-                                    target="_blank"
-                                    className="px-5 py-2.5 rounded-lg bg-[#ff4757] hover:bg-[#ff6b7a] text-white font-semibold text-sm transition-all duration-300"
-                                >
-                                    {translations.download}
-                                </Link>
                             </div>
                         </div>
                     </div>

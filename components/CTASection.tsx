@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Chrome, ArrowRight } from 'lucide-react';
+import { Chrome, ArrowRight, Star } from 'lucide-react';
 
 interface CTASectionProps {
     translations: {
@@ -9,6 +9,7 @@ interface CTASectionProps {
         titleHighlight: string;
         description: string;
         button: string;
+        reviewButton: string;
     };
 }
 
@@ -39,15 +40,25 @@ export default function CTASection({ translations }: CTASectionProps) {
                             {translations.description}
                         </p>
 
-                        <Link
-                            href="https://chromewebstore.google.com/detail/revisely-visual-feedback/cnfnhdpdfljogkhfmagobeieoagakfnn"
-                            target="_blank"
-                            className="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-[#ff4757] to-[#ff6b7a] text-white font-semibold text-lg transition-all duration-300 hover:shadow-2xl hover:shadow-[#ff4757]/40 hover:scale-105 group"
-                        >
-                            <Chrome size={22} />
-                            {translations.button}
-                            <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform duration-300" />
-                        </Link>
+                        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                            <Link
+                                href="https://chromewebstore.google.com/detail/revisely-visual-feedback/jcomekjleekgpnbpbihopehidpjnfkcl"
+                                target="_blank"
+                                className="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-[#ff4757] to-[#ff6b7a] text-white font-semibold text-lg transition-all duration-300 hover:shadow-2xl hover:shadow-[#ff4757]/40 hover:scale-105 group"
+                            >
+                                <Chrome size={22} />
+                                {translations.button}
+                                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform duration-300" />
+                            </Link>
+                            <Link
+                                href="https://chromewebstore.google.com/detail/revisely-visual-feedback/jcomekjleekgpnbpbihopehidpjnfkcl/reviews"
+                                target="_blank"
+                                className="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-[#252525] border border-[#333] hover:border-[#ffdd00] text-white font-semibold text-lg transition-all duration-300 hover:shadow-lg group"
+                            >
+                                <Star size={20} className="text-[#ffdd00]" />
+                                {translations.reviewButton}
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>

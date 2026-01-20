@@ -78,7 +78,8 @@
     "title": "Ready to Streamline Your",
     "titleHighlight": "UI Feedback?",
     "description": "Join thousands of designers and developers who use Revisely to collect visual feedback and generate AI-ready prompts.",
-    "button": "Install Now - Free"
+    "button": "Install Now - Free",
+    "reviewButton": "Rate & Review"
   },
   "footer": {
     "description": "Visual Feedback & AI Prompts for modern web development.",

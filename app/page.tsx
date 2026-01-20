@@ -18,7 +18,6 @@ export default async function Home() {
         translations={{
           features: t('nav.features'),
           howItWorks: t('nav.howItWorks'),
-          download: t('nav.download'),
         }}
       />
 
@@ -30,7 +29,6 @@ export default async function Home() {
           titleEnd: t('hero.titleEnd'),
           description: t('hero.description'),
           cta: t('hero.cta'),
-          ctaSecondary: t('hero.ctaSecondary'),
         }}
       />
 
@@ -110,6 +108,7 @@ export default async function Home() {
           titleHighlight: t('cta.titleHighlight'),
           description: t('cta.description'),
           button: t('cta.button'),
+          reviewButton: t('cta.reviewButton'),
         }}
       />
 

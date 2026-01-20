@@ -78,7 +78,8 @@
         "title": "UI Geri Bildiriminizi",
         "titleHighlight": "Kolaylaştırmaya Hazır mısınız?",
         "description": "Görsel geri bildirim toplamak ve AI uyumlu promptlar oluşturmak için Revisely kullanan binlerce tasarımcı ve geliştiriciye katılın.",
-        "button": "Şimdi Kur - Ücretsiz"
+        "button": "Şimdi Kur - Ücretsiz",
+        "reviewButton": "Değerlendir"
     },
     "footer": {
         "description": "Modern web geliştirme için Görsel Geri Bildirim & AI Promptları.",
