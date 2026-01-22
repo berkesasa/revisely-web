@@ -6,7 +6,7 @@
     },
     "hero": {
         "badge": "Chrome Eklentisi",
-        "title": "Görsel Geri Bildirim &",
+        "title": "Görsel Geri Bildirim &{br}",
         "titleHighlight": "Yapay Zeka Destekli",
         "titleEnd": "UI Düzenlemeleri",
         "description": "Tarayıcınızdan doğrudan tasarım değişikliklerini inceleyin, düzenleyin ve dışa aktarın. Görsel geri bildirimleri saniyeler içinde uygulanabilir geliştirici promptlarına dönüştürün.",

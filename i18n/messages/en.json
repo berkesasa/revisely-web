@@ -6,7 +6,7 @@
   },
   "hero": {
     "badge": "Chrome Extension",
-    "title": "Visual Feedback &",
+    "title": "Visual Feedback &{br}",
     "titleHighlight": "AI-Powered",
     "titleEnd": "UI Edits",
     "description": "Review, edit, and export design changes directly from your browser. Turn visual feedback into actionable developer prompts in seconds.",

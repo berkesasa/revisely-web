@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Chrome } from 'lucide-react';
+import RichText from './RichText';
 
 interface HeroProps {
     translations: {
@@ -44,10 +45,9 @@ export default function Hero({ translations }: HeroProps) {
                             <span className="text-sm text-[#aaa]">{translations.badge}</span>
                         </div>
 
-                        {/* Title */}
+                        {/* Title - Using RichText to support HTML tags from i18n */}
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-in-up delay-100">
-                            {translations.title}
-                            <br />
+                            <RichText>{translations.title}</RichText>
                             <span className="text-gradient">{translations.titleHighlight}</span> {translations.titleEnd}
                         </h1>
 

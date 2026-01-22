@@ -27,7 +27,7 @@ export default function LanguageSwitcher({ currentLocale }: LanguageSwitcherProp
                 className="text-[#888] group-hover:text-[#ff4757] transition-colors duration-300"
             />
             <span className="text-white/80 group-hover:text-white transition-colors duration-300">
-                {currentLocale === 'en' ? 'TR' : 'EN'}
+                {currentLocale.toUpperCase()}
             </span>
         </button>
     );
