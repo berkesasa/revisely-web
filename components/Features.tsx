@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import RichText from './RichText';
 
 interface FeaturesProps {
     translations: {
@@ -75,8 +76,8 @@ export default function Features({ translations }: FeaturesProps) {
                 {/* Section Title */}
                 <div className="text-center mb-20">
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-                        {translations.title}{' '}
-                        <span className="text-gradient">{translations.titleHighlight}</span>
+                        <RichText>{translations.title}</RichText>{' '}
+                        <span className="text-gradient"><RichText>{translations.titleHighlight}</RichText></span>
                     </h2>
                 </div>
 
@@ -94,13 +95,13 @@ export default function Features({ translations }: FeaturesProps) {
                                     }`}
                             >
                                 <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 leading-tight">
-                                    {feature.title}{' '}
-                                    <span className="text-gradient">{feature.titleHighlight}</span>
-                                    {feature.titleEnd && ` ${feature.titleEnd}`}
+                                    <RichText>{feature.title}</RichText>{' '}
+                                    <span className="text-gradient"><RichText>{feature.titleHighlight}</RichText></span>
+                                    {feature.titleEnd && <> <RichText>{feature.titleEnd}</RichText></>}
                                 </h3>
-                                <p className="text-lg text-[#aaa] leading-relaxed">
+                                <RichText as="p" className="text-lg text-[#aaa] leading-relaxed">
                                     {feature.description}
-                                </p>
+                                </RichText>
                             </div>
 
                             {/* Image */}

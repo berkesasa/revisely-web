@@ -1,6 +1,7 @@
 'use client';
 
 import { Gift, Shield, Globe, Sparkles } from 'lucide-react';
+import RichText from './RichText';
 
 interface BenefitsProps {
     translations: {
@@ -65,8 +66,8 @@ export default function Benefits({ translations }: BenefitsProps) {
                 {/* Section Title */}
                 <div className="text-center mb-20">
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-                        {translations.title}{' '}
-                        <span className="text-gradient">{translations.titleHighlight}</span>
+                        <RichText>{translations.title}</RichText>{' '}
+                        <span className="text-gradient"><RichText>{translations.titleHighlight}</RichText></span>
                     </h2>
                 </div>
 
@@ -95,11 +96,11 @@ export default function Benefits({ translations }: BenefitsProps) {
 
                                 {/* Text */}
                                 <h3 className="text-lg font-bold mb-2 text-white">
-                                    {benefit.title}
+                                    <RichText>{benefit.title}</RichText>
                                 </h3>
-                                <p className="text-sm text-[#888] leading-relaxed">
+                                <RichText as="p" className="text-sm text-[#888] leading-relaxed">
                                     {benefit.description}
-                                </p>
+                                </RichText>
                             </div>
                         </div>
                     ))}

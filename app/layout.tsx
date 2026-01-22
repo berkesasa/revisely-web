@@ -11,6 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://revisely.berkesasa.com"),
   title: "Revisely - Visual Feedback & AI Prompts | Chrome Extension",
   description:
     "Collect visual feedback, edit CSS, and annotate any site. Export pixel-perfect revision cards or AI-ready prompts. The ultimate tool for designers and developers.",

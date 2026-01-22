@@ -13,15 +13,15 @@ interface RichTextProps {
 /**
  * RichText component that safely renders HTML tags in translation strings.
  * 
- * Supports placeholders:
- * - {br} for line breaks
- * - {b}text{/b} for bold
- * - {i}text{/i} for italic
- * - {u}text{/u} for underline
+ * Supports placeholders (using [[]] to avoid next-intl ICU conflicts):
+ * - [[br]] for line breaks
+ * - [[b]]text[[/b]] for bold
+ * - [[i]]text[[/i]] for italic
+ * - [[u]]text[[/u]] for underline
  * 
  * Usage in i18n files:
- * "title": "Visual Feedback &{br}AI-Powered UI Edits"
- * "text": "This is {b}bold{/b} and this is {i}italic{/i}"
+ * "title": "Visual Feedback &[[br]]AI-Powered UI Edits"
+ * "text": "This is [[b]]bold[[/b]] and this is [[i]]italic[[/i]]"
  * 
  * Usage in components:
  * <RichText>{translations.title}</RichText>
@@ -37,21 +37,21 @@ export default function RichText({ children, className, as = 'span' }: RichTextP
 
 /**
  * Parse translation string and convert placeholders to React elements.
- * Handles: {br}, {b}...{/b}, {i}...{/i}, {u}...{/u}, {strong}...{/strong}, {em}...{/em}
+ * Handles: [[br]], [[b]]...[[/b]], [[i]]...[[/i]], [[u]]...[[/u]], [[strong]]...[[/strong]], [[em]]...[[/em]]
  */
 function parseRichText(text: string): ReactNode[] {
     const result: ReactNode[] = [];
     let key = 0;
     let remaining = text;
 
-    // First, handle paired tags like {b}text{/b}
-    const pairedTagPattern = /\{(b|i|u|strong|em)\}(.*?)\{\/\1\}/gi;
+    // First, handle paired tags like [[b]]text[[/b]]
+    const pairedTagPattern = /\[\[(b|i|u|strong|em)\]\](.*?)\[\[\/\1\]\]/gi;
     remaining = remaining.replace(pairedTagPattern, (match, tag, content) => {
         return `__TAG_${tag.toUpperCase()}_START__${content}__TAG_${tag.toUpperCase()}_END__`;
     });
 
-    // Split by {br} placeholder
-    const parts = remaining.split(/\{br\}/gi);
+    // Split by [[br]] placeholder
+    const parts = remaining.split(/\[\[br\]\]/gi);
 
     parts.forEach((part, index) => {
         // Process any paired tags in this part
@@ -114,8 +114,8 @@ function processPairedTags(text: string, startKey: number): { elements: ReactNod
 export function createRichTextHTML(text: string): { __html: string } {
     // Convert placeholders to HTML
     let html = text
-        .replace(/\{br\}/gi, '<br>')
-        .replace(/\{(b|i|u|strong|em)\}(.*?)\{\/\1\}/gi, '<$1>$2</$1>');
+        .replace(/\[\[br\]\]/gi, '<br>')
+        .replace(/\[\[(b|i|u|strong|em)\]\](.*?)\[\[\/\1\]\]/gi, '<$1>$2</$1>');
 
     return { __html: html };
 }

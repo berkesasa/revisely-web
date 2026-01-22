@@ -48,7 +48,7 @@ export default function Hero({ translations }: HeroProps) {
                         {/* Title - Using RichText to support HTML tags from i18n */}
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-in-up delay-100">
                             <RichText>{translations.title}</RichText>
-                            <span className="text-gradient">{translations.titleHighlight}</span> {translations.titleEnd}
+                            <span className="text-gradient"><RichText>{translations.titleHighlight}</RichText></span> <RichText>{translations.titleEnd}</RichText>
                         </h1>
 
                         {/* Description */}

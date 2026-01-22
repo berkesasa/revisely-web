@@ -2,14 +2,15 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { Heart, Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
+import RichText from './RichText';
 
 interface FooterProps {
     translations: {
         description: string;
         rights: string;
-        madeWith: string;
-        by: string;
+        madeWithBefore: string;
+        madeWithAfter: string;
     };
 }
 
@@ -33,9 +34,9 @@ export default function Footer({ translations }: FooterProps) {
                             </div>
                             <span className="text-xl font-bold text-white">Revisely</span>
                         </Link>
-                        <p className="text-sm text-[#666] max-w-xs text-center md:text-left">
+                        <RichText as="p" className="text-sm text-[#666] max-w-xs text-center md:text-left">
                             {translations.description}
-                        </p>
+                        </RichText>
                     </div>
 
                     {/* Center - Social Links */}
@@ -71,14 +72,15 @@ export default function Footer({ translations }: FooterProps) {
                             © {currentYear} Revisely. {translations.rights}
                         </p>
                         <p className="text-sm text-[#555] mt-1 flex items-center justify-center md:justify-end gap-1">
-                            {translations.by} <Heart size={14} className="text-[#ff4757] fill-[#ff4757]" /> {translations.madeWith}{' '}
+                            {translations.madeWithBefore && <>{translations.madeWithBefore}{' '}</>}
                             <Link
                                 href="https://berkesasa.com"
                                 target="_blank"
                                 className="text-[#ff4757] hover:underline"
                             >
-                                Berke Sasa
+                                Berke SASA
                             </Link>
+                            {translations.madeWithAfter && <>{' '}{translations.madeWithAfter}</>}
                         </p>
                     </div>
                 </div>

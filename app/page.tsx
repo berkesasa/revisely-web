@@ -116,8 +116,8 @@ export default async function Home() {
         translations={{
           description: t('footer.description'),
           rights: t('footer.rights'),
-          madeWith: t('footer.madeWith'),
-          by: t('footer.by'),
+          madeWithBefore: t('footer.madeWithBefore'),
+          madeWithAfter: t('footer.madeWithAfter'),
         }}
       />
     </main>

@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { Chrome, ArrowRight, Star } from 'lucide-react';
+import RichText from './RichText';
 
 interface CTASectionProps {
     translations: {
@@ -31,9 +32,8 @@ export default function CTASection({ translations }: CTASectionProps) {
                     {/* Content */}
                     <div className="relative z-10">
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                            {translations.title}
-                            <br />
-                            <span className="text-gradient">{translations.titleHighlight}</span>
+                            <RichText>{translations.title}</RichText>
+                            <span className="text-gradient"><RichText>{translations.titleHighlight}</RichText></span>
                         </h2>
 
                         <p className="text-lg text-[#aaa] max-w-2xl mx-auto mb-10">

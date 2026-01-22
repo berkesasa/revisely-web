@@ -6,24 +6,24 @@
   },
   "hero": {
     "badge": "Chrome Extension",
-    "title": "Visual Feedback &{br}",
-    "titleHighlight": "AI-Powered",
+    "title": "Visual Feedback &[[br]]",
+    "titleHighlight": "AI-Powered [[br]]",
     "titleEnd": "UI Edits",
     "description": "Review, edit, and export design changes directly from your browser. Turn visual feedback into actionable developer prompts in seconds.",
     "cta": "Add to Chrome - It's Free",
     "ctaSecondary": "Watch Demo"
   },
   "features": {
-    "title": "Everything You Need for",
+    "title": "Everything You Need for [[br]]",
     "titleHighlight": "Perfect UI Feedback",
     "feature1": {
-      "title": "Visual Feedback &",
+      "title": "Visual Feedback & [[br]]",
       "titleHighlight": "AI-Powered UI Edits",
       "description": "Review, edit, and export design changes directly from your browser. Turn visual feedback into actionable developer prompts in seconds."
     },
     "feature2": {
-      "title": "Generate",
-      "titleHighlight": "Prompts",
+      "title": "Generate ",
+      "titleHighlight": "Prompts [[br]]",
       "titleEnd": "for AI Code Editors",
       "description": "Stop struggling to explain UI issues to AI. Get structured prompts and clean CSS designed specifically for fast, accurate AI code generation."
     },
@@ -33,7 +33,7 @@
       "description": "Modify any element on the page without touching a line of code. Adjust colors, spacing, font sizes and more in real time."
     },
     "feature4": {
-      "title": "Shareable,",
+      "title": "Shareable, [[br]]",
       "titleHighlight": "Organized UI Reports",
       "description": "Aggregate individual edits into one clear document. Get categorized changes and a consolidated master AI prompt for the whole page."
     }
@@ -75,7 +75,7 @@
     }
   },
   "cta": {
-    "title": "Ready to Streamline Your",
+    "title": "Ready to Streamline Your[[br]]",
     "titleHighlight": "UI Feedback?",
     "description": "Join thousands of designers and developers who use Revisely to collect visual feedback and generate AI-ready prompts.",
     "button": "Install Now - Free",
@@ -84,7 +84,7 @@
   "footer": {
     "description": "Visual Feedback & AI Prompts for modern web development.",
     "rights": "All rights reserved.",
-    "madeWith": "by",
-    "by": "Made with"
+    "madeWithBefore": "Made by",
+    "madeWithAfter": ""
   }
 }

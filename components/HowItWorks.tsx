@@ -1,6 +1,7 @@
 'use client';
 
 import { Download, MousePointer, Share2 } from 'lucide-react';
+import RichText from './RichText';
 
 interface HowItWorksProps {
     translations: {
@@ -55,8 +56,8 @@ export default function HowItWorks({ translations }: HowItWorksProps) {
                 {/* Section Title */}
                 <div className="text-center mb-20">
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-                        {translations.title}{' '}
-                        <span className="text-gradient">{translations.titleHighlight}</span>
+                        <RichText>{translations.title}</RichText>{' '}
+                        <span className="text-gradient"><RichText>{translations.titleHighlight}</RichText></span>
                     </h2>
                 </div>
 
@@ -83,11 +84,11 @@ export default function HowItWorks({ translations }: HowItWorksProps) {
 
                                 {/* Content */}
                                 <h3 className="text-xl font-bold mb-3 text-white group-hover:text-[#ff4757] transition-colors duration-300">
-                                    {step.title}
+                                    <RichText>{step.title}</RichText>
                                 </h3>
-                                <p className="text-[#888] leading-relaxed">
+                                <RichText as="p" className="text-[#888] leading-relaxed">
                                     {step.description}
-                                </p>
+                                </RichText>
                             </div>
                         </div>
                     ))}

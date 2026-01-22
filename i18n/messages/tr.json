@@ -6,7 +6,7 @@
     },
     "hero": {
         "badge": "Chrome Eklentisi",
-        "title": "Görsel Geri Bildirim &{br}",
+        "title": "Görsel Geri Bildirim & ",
         "titleHighlight": "Yapay Zeka Destekli",
         "titleEnd": "UI Düzenlemeleri",
         "description": "Tarayıcınızdan doğrudan tasarım değişikliklerini inceleyin, düzenleyin ve dışa aktarın. Görsel geri bildirimleri saniyeler içinde uygulanabilir geliştirici promptlarına dönüştürün.",
@@ -14,7 +14,7 @@
         "ctaSecondary": "Demo İzle"
     },
     "features": {
-        "title": "İhtiyacınız Olan Her Şey",
+        "title": "İhtiyacınız Olan Her Şey [[br]]",
         "titleHighlight": "Mükemmel UI Geri Bildirimi İçin",
         "feature1": {
             "title": "Görsel Geri Bildirim &",
@@ -22,7 +22,7 @@
             "description": "Tarayıcınızdan doğrudan tasarım değişikliklerini inceleyin, düzenleyin ve dışa aktarın. Görsel geri bildirimleri saniyeler içinde uygulanabilir geliştirici promptlarına dönüştürün."
         },
         "feature2": {
-            "title": "AI Kod Editörleri İçin",
+            "title": "AI Kod Editörleri İçin [[br]]",
             "titleHighlight": "Promptlar",
             "titleEnd": "Oluşturun",
             "description": "UI sorunlarını yapay zekaya açıklamakta zorlanmayı bırakın. Hızlı ve doğru AI kod üretimi için özel olarak tasarlanmış yapılandırılmış promptlar ve temiz CSS alın."
@@ -33,7 +33,7 @@
             "description": "Bir satır kod yazmadan sayfadaki herhangi bir öğeyi değiştirin. Renkleri, boşlukları, yazı tipi boyutlarını ve daha fazlasını gerçek zamanlı olarak ayarlayın."
         },
         "feature4": {
-            "title": "Paylaşılabilir,",
+            "title": "Paylaşılabilir, [[br]]",
             "titleHighlight": "Düzenli UI Raporları",
             "description": "Bireysel düzenlemeleri tek bir belgede toplayın. Kategorize edilmiş değişiklikler ve tüm sayfa için birleştirilmiş bir ana AI promptu alın."
         }
@@ -75,7 +75,7 @@
         }
     },
     "cta": {
-        "title": "UI Geri Bildiriminizi",
+        "title": "UI Geri Bildiriminizi[[br]]",
         "titleHighlight": "Kolaylaştırmaya Hazır mısınız?",
         "description": "Görsel geri bildirim toplamak ve AI uyumlu promptlar oluşturmak için Revisely kullanan binlerce tasarımcı ve geliştiriciye katılın.",
         "button": "Şimdi Kur - Ücretsiz",
@@ -84,7 +84,7 @@
     "footer": {
         "description": "Modern web geliştirme için Görsel Geri Bildirim & AI Promptları.",
         "rights": "Tüm hakları saklıdır.",
-        "madeWith": "ile yapıldı",
-        "by": ""
+        "madeWithBefore": "",
+        "madeWithAfter": "tarafından yapıldı"
     }
 }
